@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mannarna Merimasku 2018</title>
+  <meta name="author" content="Mannarna">
+  <meta name="description" content="Manges blasters">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+</head>
+<body>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<!--
+    <div class="overlay">
+        
+        <a href="#banner" class="hvr-icon-hang" data-aos="slide-down">Scroll Down <img src="angle-down.svg" class="hvr-icon" /></img></a>
+            
+    </div>
+    <div class="buttons">
+            <a href="https://www.youtube.com/watch?v=usRnG2O_IWw">Watch On YouTube</a>
+            <div class="divider"></div>
+            <button onclick="enableMute()" type="button">Mute</button>
+            <div class="divider"></div>
+            <button onclick="disableMute()" type="button">Unmute</button>
+    </div>
+-->
+    <div class="wrapper">
+        <div class="viddy">
+                <iframe id="version2" width="100%" height="720" src="https://www.youtube.com/embed/usRnG2O_IWw?controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            <!-- <video src="https://www.youtube.com/watch?v=usRnG2O_IWw" id="version2" width="100%" height="auto" type="video/mp4" loop muted preload autoplay></video> -->
+        </div>
+        <div id="banner">
+            <h2 data-aos="slide-left">Merimasku Massive Midsummer Mania 2018 <br>Tickets Out At Selected Retailers</h2>
+        </div>
+        <div class="black" data-aos="fade-left">
+                <img src="pics/MannarnaBasket.png" width="200px" height="auto">
+            <p>Blasting Mannarna Activities</p>
+        </div>
+        <div class="actualblack" data-aos="fade-left">
+            <img src="pics/placeholder-200x200.jpg">
+            <p>Sickk Mannarna Tunes</p>
+        </div>
+        <div class="black" data-aos="fade-right">
+                <img src="pics/placeholder-200x200.jpg">
+            <p>Extremely safe & family friendly slip n' slide</p>
+        </div>
+        <div class="actualblack" data-aos="fade-right">
+                <img src="pics/IMG_20160828_144754.png" width="200px" height="auto">
+            <p>Crystal clear scuba diving waters</p>
+        </div>
+        <div class="map">
+            <h3>Interactive Map (Clickable)</h3>
+            <img src="pics/merimasku.png" usemap="#merimap">
+            <map name="merimap">
+                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+                    <area shape="rect" coords="255,320,375,335" alt="Keitosauna1" href="keitosauna1.html" target="_blank">
+                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+            </map>
+            <div class="mapbuttons">
+
+            </div>
+        </div>
+        <div class="driving">
+            <h3>Driving Instructions</h3>
+            <div><p>Google Maps -> Kärniementie 123 (Naantali)</p></div>
+        </div>
+        <div class="footer">
+                <p>Site by Mats Liljeström &copy; </p>
+        </div>
+    </div>
+    <script src="js/imageMapResizer.min.js"></script>
+    <script>imageMapResize();</script>
+    <script>
+            var vid = document.getElementById("version2");
+
+            function enableMute() { 
+            vid.muted = true;
+            }
+            function disableMute()  {
+            vid.muted = false;    
+            }
+            </script>
+</body>
+
+</html>

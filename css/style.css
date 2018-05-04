@@ -1,0 +1,357 @@
+.overlay    {
+    position: absolute;
+    top: 44vw;
+    left: 47%;
+    right: 53%;
+    z-index: 1;
+    padding-right: 20px;
+}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+.buttons    {
+    position: absolute;
+    top: 44vw;
+    left: 5%;
+    right: 95%;
+    z-index: 2;
+}
+
+.buttons button {
+    margin      : 0;
+    padding     : 0;
+    border: 0;
+    background  : transparent;
+    font-family : inherit;
+    font-size   : 1em;
+    cursor      : pointer;
+    font-family : 'Oswald', sans-serif;
+    font-weight : 400;
+    font-stretch: expanded;
+    color       : white;
+    
+}
+
+.buttons a {
+    margin      : 0;
+    padding     : 0;
+    border: 0;
+    background  : transparent;
+    font-family : inherit;
+    font-size   : 1em;
+    cursor      : pointer;
+    font-family : 'Oswald', sans-serif;
+    font-weight : 400;
+    font-stretch: expanded;
+    color       : white;
+    text-decoration: none;
+}
+
+.buttons a:hover   {
+    color: grey;
+    font-size: 1.1em;
+}
+
+.buttons button:hover   {
+    color: grey;
+    font-size: 1.1em;
+}
+
+.overlay a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+}
+
+.overlay a:hover   {
+    color: grey;
+    font-size: 1.1em;
+}
+
+.overlay > img {
+    height: 5px;
+    width: auto;
+}
+
+.wrapper    {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    z-index: 0;
+    max-width: 100%;
+}
+
+.wrapper > div:nth-child(odd) {
+    background: aqua;
+    color: white;
+}
+
+.wrapper > div:nth-child(even) {
+    background: navy;
+    color: white;
+}
+
+.wrapper > .black p   {
+    color: white;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+}
+
+.wrapper > .actualblack p   {
+    color: white;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+}
+
+
+.wrapper > .viddy   {
+    grid-column: 1/5;
+    margin-bottom: -20px;
+}
+
+.wrapper > #banner  {
+    grid-column: 1/5;
+}
+
+/*
+.wrapper > .banner:hover     {
+    background: yellow;
+    color: black;
+}
+*/
+@keyframes transitford  {
+    from {background-color: navy; color: aqua;}
+    to {background-color: aqua; color: navy;}  
+}
+
+
+.wrapper > #banner h2  {
+    color: white;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+}
+
+.wrapper > #banner:hover  {
+    animation-name: transitford;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}    
+
+.wrapper > #banner h2:hover  {
+    animation-name: transitford;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+
+}
+
+.wrapper > div img   {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/*
+p   {
+    color: rgb(0, 0, 0);
+    text-decoration: black;
+    text-decoration-style: dotted;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+
+}
+*/
+.wrapper > .map {
+    grid-column: 1/5;
+    background: seagreen !important;
+}
+
+.wrapper > .map h3  {
+    font-size: 2.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+    color: white; 
+}
+
+.wrapper > .driving  {
+    grid-column: 1/5;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.wrapper > .driving h3  {
+    font-size: 2.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+    color: white;
+}
+
+.wrapper > .driving > div   {
+    grid-column: 1/5;
+}
+
+.wrapper > .driving > div p  {
+    font-size: 1.8em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+    color: white;
+}
+
+.wrapper > .footer  {
+    grid-column: 1/5;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.wrapper > .footer p  {
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper > #banner   {
+        font-size: 1.5vw;    
+    } 
+    .buttons {
+        top:28vw;
+    }
+
+    .buttons button {
+        font-size: 0.8em;
+    }
+
+    .buttons button:hover   {
+        font-size: 0.9em;
+    }
+
+    .buttons a {
+        font-size: 0.8em;
+    }
+
+    .buttons a:hover   {
+        font-size: 0.9em;
+    }
+
+    .overlay    {
+        top: 40vw;
+    }
+        
+    .overlay a {
+        font-size: 0.8em;
+    }
+    
+    .overlay a:hover   {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Icon Hang */
+@-webkit-keyframes hvr-icon-hang {
+    0% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+    50% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+    }
+    100% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @keyframes hvr-icon-hang {
+    0% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+    50% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+    }
+    100% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @-webkit-keyframes hvr-icon-hang-sink {
+    100% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @keyframes hvr-icon-hang-sink {
+    100% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  .hvr-icon-hang {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-icon-hang .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .hvr-icon-hang:hover .hvr-icon, .hvr-icon-hang:focus .hvr-icon, .hvr-icon-hang:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+    animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+  

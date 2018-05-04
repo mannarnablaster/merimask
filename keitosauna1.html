@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mannarna Merimasku 2018</title>
+  <meta name="author" content="Mannarna">
+  <meta name="description" content="Manges blasters">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+</head>
+<body>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="wrapper">
+        <div id="banner">
+            <h2 data-aos="slide-left">Keitosauna #1</h2>
+        </div>
+        <div class="driving">
+                <div><p>Sauna: 1<br>Beds: 2<br>Fridge: 1</p></div>
+            </div>
+        <div class="map">
+            <h3>Interactive Map (Clickable)</h3>
+            <img src="pics/merimasku.png" usemap="#merimap">
+            <map name="merimap">
+                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+                    <area shape="rect" coords="255,320,375,335" alt="Keitosauna1" href="keitosauna1.html" target="_blank">
+                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+            </map>
+        </div>
+        
+        <div class="footer">
+                <p>Site by Mats Liljeström &copy; </p>
+        </div>
+    </div>
+    <script src="js/imageMapResizer.min.js"></script>
+    <script>imageMapResize();</script>
+    <script>
+            var vid = document.getElementById("version2");
+
+            function enableMute() { 
+            vid.muted = true;
+            }
+            function disableMute()  {
+            vid.muted = false;    
+            }
+            </script>
+</body>
+
+</html>
