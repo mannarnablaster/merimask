@@ -263,6 +263,28 @@ p   {
     color: white;
 }
 
+.wrapper > .homebutton {
+    grid-column: 1/5;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.wrapper > .homebutton a   {
+    display: block;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper > .homebutton a:hover  {
+    color: grey;
+    font-size: 1.1em;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     font-family: 'Oswald', sans-serif;
