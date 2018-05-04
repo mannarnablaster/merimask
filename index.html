@@ -77,6 +77,47 @@
             <h3>Driving Instructions</h3>
             <div><p>Google Maps -> Kärniementie 123 (Naantali)</p></div>
         </div>
+        <div class="book">
+            <h4>Ticket Reservation</h4>
+        </div>
+        <div class="container">
+                <form action="https://formspree.io/mannarna@protonmail.com" method="post" enctype="text/plain">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Arrival</label>
+                  <select id="lname" name="lname">
+                      <option value="20">20.6 (Wednesday)</option>  
+                      <option value="21">21.6 (Thursday)</option> 
+                      <option value="22">22.6 (Friday)</option> 
+                      <option value="23">23.6 (Saturday)</option> 
+                  </select>
+                  <label for="dname">Departure</label>
+                  <select id="dname" name="dname">
+                      <option value="22d">22.6 (Friday)</option>  
+                      <option value="23d">23.6 (Saturday)</option> 
+                      <option value="24d">24.6 (Sunday)</option> 
+                      <option value="25d">25.6 (Monday)</option> 
+                  </select>
+                  <label for="country">Sleeping place</label>
+                  <select id="country" name="country">
+                    <optgroup label="Blasthouse1">
+                      <option value="bed1">Living Room 1</option>  
+                      <option value="bed2">Living Room 2</option> 
+                      <option value="bed3">Double Bed 1</option> 
+                      <option value="bed4">Double Bed 2</option> 
+                      <option value="bed5">Lone Bed</option> 
+                    </optgroup>
+                    <option value="canada">Blasthouse #2</option>
+                    <option value="usa">Blasthouse #3</option>
+                    <option value="keit1" disabled>Keitosauna #1 (full)</option>
+                    <option value="keit2">Keitosauna #2</option>
+                  </select>
+                  <input type="submit" value="Send">
+              
+                </form>
+        </div>
         <div class="footer">
                 <p>Site by Mats Liljeström &copy; </p>
         </div>
