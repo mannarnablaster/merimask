@@ -1,3 +1,6 @@
+
+/*  MASSOR MED OLD CODE FOR GAMLA VIDEOSTILEN, BEHOVS INTE MERA
+
 .overlay    {
     position: absolute;
     top: 44vw;
@@ -80,9 +83,15 @@
     height: 5px;
     width: auto;
 }
+*/
+
 
 .wrapper    {
-    background: navy;
+    background: #E0d9d3;
+}
+
+.wrapper > #banner  {
+    background: #01439c;
 }
 
 .wrapper    {
@@ -92,16 +101,61 @@
     max-width: 100%;
 }
 
-.wrapper > div:nth-child(odd) {
-    background: aqua;
-    color: white;
+.wrapper > .black {
+    background: #389cD7;
 }
 
-.wrapper > div:nth-child(even) {
-    background: navy;
-    color: white;
+.wrapper > .actualblack {
+    background: #59BBD5;
 }
 
+.wrapper > .actualblack >.card   {
+    perspective: 700;
+    transition: all 0.6s ease;
+    position: relative;
+}
+
+.wrapper > .actualblack > .card:hover   {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.wrapper > .black >.card   {
+    perspective: 700;
+    transition: all 0.6s ease;
+    position: relative;
+}
+
+.wrapper > .black > .card:hover   {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.back, .front{
+    backface-visibility: hidden;
+}
+
+.back   {
+    transform: rotateY(180deg);
+    font-family: 'Oswald' sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -10vw; 
+}
+
+.back1   {
+    margin-top: -12vw;
+}
+
+.back2  {
+    margin-top: -11vw;
+}
+
+.back p {
+    margin: 0;
+    text-align: center;
+}
 .wrapper > .black p   {
     color: white;
     font-size: 2em;
@@ -137,8 +191,8 @@
 }
 */
 @keyframes transitford  {
-    from {background-color: navy; color: aqua;}
-    to {background-color: aqua; color: navy;}  
+    from {background-color: #01439c; color: #59BBD5;}
+    to {background-color: #59BBD5; color: #01439c;}  
 }
 
 
@@ -158,6 +212,7 @@
     animation-fill-mode: forwards;
 }    
 
+/*
 .wrapper > #banner h2:hover  {
     animation-name: transitford;
     animation-duration: 1s;
@@ -168,8 +223,8 @@
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
-
 }
+*/
 
 .wrapper > div img   {
     max-width: 100%;
@@ -193,24 +248,30 @@ p   {
 
 }
 */
-.wrapper > .map {
+.wrapper > .mapcontainer    {
     grid-column: 1/5;
-    background: seagreen !important;
+    background: #BCE3EC;
 }
 
-.wrapper > .map h3  {
+.wrapper > .mapcontainer > .map {
+    grid-column: 2/4;
+    background: #BCE3EC;
+}
+
+.wrapper > .mapcontainer > .map h3  {
     font-size: 2.5em;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
-    color: white; 
+    color:#389cD7; 
 }
 
 .wrapper > .driving  {
     grid-column: 1/5;
     padding-top: 2em;
     padding-bottom: 2em;
+    background: #59BBD5;
 }
 
 .wrapper > .driving h3  {
@@ -226,6 +287,12 @@ p   {
     grid-column: 1/5;
 }
 
+.wrapper > .driving > .gfyvideo {
+    height: 30vw;
+    width: 53vw;
+    margin-left: 22.5vw;
+}
+
 .wrapper > .driving > div p  {
     font-size: 1.8em;
     font-family: 'Oswald', sans-serif;
@@ -237,10 +304,11 @@ p   {
 
 .wrapper > .book    {
     grid-column: 1/5;
+    background: #389cD7;
 }
 
 .wrapper > .book h4 {
-    color: navy;
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
@@ -252,6 +320,7 @@ p   {
     grid-column: 1/5;
     padding-top: 2em;
     padding-bottom: 2em;
+    background: #F2EBE2;
 }
 
 .wrapper > .footer p  {
@@ -260,7 +329,7 @@ p   {
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
-    color: white;
+    color: #389cD7;
 }
 
 .wrapper > .homebutton {
@@ -285,8 +354,25 @@ p   {
     font-size: 1.1em;
 }
 
+.wrapper > .containerreiner    {
+    grid-column: 2/4;
+    background: #389cD7;
+}
+
+/* Add a background color and some padding around the form */
+.wrapper > .containerreiner > .container {
+    grid-column: 2/4;
+    /* background-color: #f2f2f2; */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    margin: 5px 5px 5px 5px;
+    border: 10px rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+.containerreiner > .container > form > input[type=text], select, textarea {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
@@ -294,36 +380,34 @@ input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ccc; /* Gray border */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    box-sizing: border-box; /* Make sure that padding and width stays in place
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+.containerreiner > .container > form > label[for="dname"]    {
+    color: white;
+}
+
+.containerreiner > .container > form > label{
+    font-family: 'Oswald', sans-serif;
+}
+
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: aqua;
+.containerreiner > .container > form > input[type=submit] {
+    background-color: inherit;
     font-family: 'Oswald', sans-serif;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    grid-column: 2/4;
-    background-color: #f2f2f2;
-    padding: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-stretch: expanded;
+.containerreiner > .container > form > input[type=submit]:hover {
+    background-color: #E0d9d3;
+    color: #389cD7;
 }
 
 @media only screen and (max-width: 600px) {
@@ -361,6 +445,28 @@ input[type=submit]:hover {
     .overlay a:hover   {
         font-size: 0.9em;
     }
+
+    .wrapper > div {
+        grid-column: 1/5;
+    }
+
+    .wrapper > .actualblack {
+    }
+
+    .wrapper > .mapcontainer    {
+        margin-top: 0;
+        z-index: 200;
+    }
+
+    .back1  {
+        margin-top: -47.5vw !important;
+    }
+
+    .back   {
+        margin-top: -37.5vw;
+    }
+
+    
 }
 
 

@@ -34,7 +34,7 @@
             <div class="divider"></div>
             <button onclick="disableMute()" type="button">Unmute</button>
     </div>
--->
+--> 
     <div class="wrapper">
         <div class="viddy">
                 <iframe id="version2" width="100%" height="720" src="https://www.youtube.com/embed/usRnG2O_IWw?controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
@@ -44,47 +44,81 @@
             <h2 data-aos="slide-left">Merimasku Massive Midsummer Mania 2018 <br>Tickets Out At Selected Retailers</h2>
         </div>
         <div class="black" data-aos="fade-left">
-                <img src="pics/MannarnaBasket.png" width="200px" height="auto">
-            <p>Blasting Mannarna Activities</p>
+            <div class="card">
+                <div class="front">
+                    <img src="pics/MannarnaBasket.png" width="200px" height="auto">
+                    <p>Blasting Mannarna Activities</p>
+               </div>
+               <div class="back back1">
+                   <p>Beer &amp; Bong <br> Sauna &amp; Fire <br> Mannarna DiscGolf <br> Slip &amp; Sled <br> Midnight Treasure Hunt (Find Rasmus)</p>
+               </div>
+            </div>
         </div>
         <div class="actualblack" data-aos="fade-left">
-            <img src="http://www.belcourt.org/sm_files/LooneyTunesweb.jpg" width="340" height="auto">
-            <p>Sickk Mannarna Tunes</p>
+            <div class="card">
+                <div class="front">
+                    <img src="pics/mannarnatrans.png" width="200" height="auto">
+                    <p>Island Transport By Mannarna Dinghy</p>
+                </div>
+                <div class="back">
+                    <p>5 Minutes! <br> Qualified Sailors! <br> Survival Rate 98.5!</p>
+                </div>
+            </div>    
         </div>
-        <div class="black" data-aos="fade-right">
-                <img src="https://i.imgur.com/5BJxSzN.jpg" width="300" height="auto">
-            <p>Extremely safe & family friendly slip n' slide</p>
-        </div>
+
+            <div class="black" data-aos="fade-right">
+                <div class="card">
+                    <div class="front">
+                        <img src="pics/grilli.png" width="200" height="auto">
+                        <p>Crazy Michelin Star Kitchen</p>
+                    </div>
+                    <div class="back back2">
+                        <p>Running Water: No<br>Dishwasher: No<br>Anything Modern: No<br> Grill: Yes!</p>
+                    </div>
+                </div>  
+            </div>
+
         <div class="actualblack" data-aos="fade-right">
-                <img src="pics/IMG_20160828_144754.png" width="200px" height="auto">
-            <p>Crystal clear scuba diving waters</p>
+                <div class="card">
+                    <div class="front">
+                        <img src="pics/bedi.png" width="200px" height="auto">
+                        <p>Insane ravebeds!</p>
+                    </div>
+                    <div class="back">
+                        <p>Beds for up to 15 people<br> Camping space for 200</p>
+                    </div>    
+                </div>
         </div>
-        <div class="map">
-            <h3>Interactive Map (Clickable)</h3>
-            <img src="pics/merimasku.png" usemap="#merimap">
-            <map name="merimap">
-                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
-                    <area shape="rect" coords="255,320,375,335" alt="Keitosauna1" href="keitosauna1.html" target="_blank">
-                    <area shape="rect" coords="400,305,520,320" alt="Blasthouse2" href="blasthouse2.html" target="_blank">
-                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
-                    <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
-            </map>
-           
+
+        <div class="mapcontainer">
+                <div class="map">
+                    <h3>Interactive Map (Clickable)</h3>
+                    <img src="pics/merimasku.png" usemap="#merimap">
+                    <map name="merimap">
+                            <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+                            <area shape="rect" coords="255,320,375,335" alt="Keitosauna1" href="keitosauna1.html" target="_blank">
+                            <area shape="rect" coords="400,305,520,320" alt="Blasthouse2" href="blasthouse2.html" target="_blank">
+                            <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+                            <area shape="rect" coords="210,180,330,200" alt="Blasthouse1" href="blasthouse.html" target="_blank">
+                    </map>
+                
+                </div>
         </div>
         <div class="driving">
             <h3>Driving Instructions</h3>
-            <div><p>Google Maps -> Kärniementie 123 (Naantali)</p></div>
+            <div><p>Google Maps -> Kärniementie 123 (Naantali) <br><br> <i>More detailed info coming soon!</i></p></div>
         </div>
         <div class="book">
             <h4>Ticket Reservation</h4>
         </div>
+        <div class="containerreiner">   <!-- Changes the background color around the container which is about 2/4 -->
         <div class="container">
                 <form action="https://formspree.io/mannarna@protonmail.com" method="POST">
               
-                  <label for="fname">First Name</label>
+                  <label for="dname">First Name</label>
                   <input type="text" id="fname" name="name" placeholder="Your name..">
               
-                  <label for="lname">Arrival</label>
+                  <label for="dname">Arrival</label>
                   <select id="lname" name="name">
                       <option value="arrival20" name="name">20.6 (Wednesday)</option>  
                       <option value="arrival21" name="name">21.6 (Thursday)</option> 
@@ -98,7 +132,7 @@
                       <option value="departure24" name="name">24.6 (Sunday)</option> 
                       <option value="departure25" name="name">25.6 (Monday)</option> 
                   </select>
-                  <label for="country">Sleeping place</label>
+                  <label for="dname">Sleeping place</label>
                   <select id="country" name="name">
                     <optgroup label="Blasthouse 1">
                       <option value="blasthouse1LR1" name="name">Living Room 1</option>  
@@ -129,7 +163,7 @@
                             <option value="keitosauna1Sofa" name="name">Sofa</option>  
                     </optgroup>
                   </select>
-                  <label for="bobby">Other info</label>
+                  <label for="dname">Other info</label>
                   <input id="bobby" type="text" name="name" placeholder="Enter here.."> 
 
                   <input type="hidden" name="_format" value="plain" />
@@ -137,10 +171,11 @@
               
                 </form>
         </div>
+    </div>  
         <div class="footer">
                 <p>Site by Mats Liljeström &copy; </p>
         </div>
-    </div>
+    </div> <!-- End Wrapper -->
     <script src="js/imageMapResizer.min.js"></script>
     <script>imageMapResize();</script>
     <script>
