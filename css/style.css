@@ -1,97 +1,19 @@
-
-/*  MASSOR MED OLD CODE FOR GAMLA VIDEOSTILEN, BEHOVS INTE MERA
-
-.overlay    {
-    position: absolute;
-    top: 44vw;
-    left: 47%;
-    right: 53%;
-    z-index: 1;
-    padding-right: 20px;
-}
-
-.divider{
-    width:5px;
-    height:auto;
-    display:inline-block;
-}
-
-.buttons    {
-    position: absolute;
-    top: 44vw;
-    left: 5%;
-    right: 95%;
-    z-index: 2;
-}
-
-.buttons button {
-    margin      : 0;
-    padding     : 0;
-    border: 0;
-    background  : transparent;
-    font-family : inherit;
-    font-size   : 1em;
-    cursor      : pointer;
-    font-family : 'Oswald', sans-serif;
-    font-weight : 400;
-    font-stretch: expanded;
-    color       : white;
-    
-}
-
-.buttons a {
-    margin      : 0;
-    padding     : 0;
-    border: 0;
-    background  : transparent;
-    font-family : inherit;
-    font-size   : 1em;
-    cursor      : pointer;
-    font-family : 'Oswald', sans-serif;
-    font-weight : 400;
-    font-stretch: expanded;
-    color       : white;
-    text-decoration: none;
-}
-
-.buttons a:hover   {
-    color: grey;
-    font-size: 1.1em;
-}
-
-.buttons button:hover   {
-    color: grey;
-    font-size: 1.1em;
-}
-
-.overlay a {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-stretch: expanded;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1em;
-    color: white;
-}
-
-.overlay a:hover   {
-    color: grey;
-    font-size: 1.1em;
-}
-
-.overlay > img {
-    height: 5px;
-    width: auto;
-}
-*/
-
-
 .wrapper    {
     background: #E0d9d3;
 }
 
 .wrapper > #banner  {
-    background: #01439c;
+    background: url(/pics/reppattern.png);
+    background-repeat: repeat-x repeat-y;
+}
+
+.wrapper > #banner img  {
+    left: 0;
+    top: 0;
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: auto;
 }
 
 .wrapper    {
@@ -141,11 +63,17 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    /*
     margin-top: -10vw; 
+    */
 }
 
 .back1   {
-    margin-top: -12vw;
+    left: 12%;
+    top: 20%;
+    display: block;
+    width: 75%;
+    height: auto; 
 }
 
 .back2  {
@@ -205,27 +133,6 @@
     text-align: center;
 }
 
-.wrapper > #banner:hover  {
-    animation-name: transitford;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}    
-
-/*
-.wrapper > #banner h2:hover  {
-    animation-name: transitford;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    font-size: 4em;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-stretch: expanded;
-    text-align: center;
-}
-*/
-
 .wrapper > div img   {
     max-width: 100%;
     height: auto;
@@ -235,19 +142,6 @@
     margin-top: 20px;
 }
 
-/*
-p   {
-    color: rgb(0, 0, 0);
-    text-decoration: black;
-    text-decoration-style: dotted;
-    font-size: 2em;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-stretch: expanded;
-    text-align: center;
-
-}
-*/
 .wrapper > .mapcontainer    {
     grid-column: 1/5;
     background: #BCE3EC;
@@ -410,10 +304,25 @@ p   {
     color: #389cD7;
 }
 
+@media only screen and (min-width: 601px) and (max-width: 1171px) {
+    .wrapper > .black p {
+        font-size: 1.2em;
+    }
+    .wrapper > .actualblack p {
+        font-size: 1.2em;
+    }    
+}
+
 @media only screen and (max-width: 600px) {
     .wrapper > #banner   {
         font-size: 1.5vw;    
     } 
+
+    .wrapper > #banner img    {
+        width: 100%;
+        height: auto;
+    }
+
     .buttons {
         top:28vw;
     }
@@ -457,15 +366,15 @@ p   {
         margin-top: 0;
         z-index: 200;
     }
-
+/*
     .back1  {
-        margin-top: -47.5vw !important;
+        margin-top: -90.5vw !important;
     }
 
     .back   {
         margin-top: -37.5vw;
     }
-
+*/
     
 }
 
