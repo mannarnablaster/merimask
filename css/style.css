@@ -1,12 +1,25 @@
+*   {
+    font-family: 'Lato', sans-serif !important;
+}
+
+body{
+    padding: 10p;
+}
+
 .wrapper    {
     background: #E0d9d3;
 }
 
-.wrapper > #banner  {
-    background: url(/pics/reppattern.png);
-    background-repeat: repeat-x repeat-y;
+.wrapper > .viddy{
+    padding-bottom: 16px;
 }
 
+.wrapper > #banner  {
+    background: linear-gradient(to right bottom, #061932e0, #0e53aec8), url(../pics/capteurinha.png);
+    /* background-repeat: repeat-x repeat-y; */
+    background-size: cover;
+    background-position: center;
+}
 .wrapper > #banner img  {
     left: 0;
     top: 0;
@@ -127,7 +140,6 @@
 .wrapper > #banner h2  {
     color: white;
     font-size: 4em;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
@@ -144,12 +156,16 @@
 
 .wrapper > .mapcontainer    {
     grid-column: 1/5;
-    background: #BCE3EC;
+    background: linear-gradient(to right bottom,
+     #061932e0,
+      #0e53aec8),
+       url(../pics/rakkatakkssssss.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .wrapper > .mapcontainer > .map {
     grid-column: 2/4;
-    background: #BCE3EC;
 }
 
 .wrapper > .mapcontainer > .map h3  {
@@ -158,14 +174,23 @@
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
-    color:#389cD7; 
+    color: white; 
+}
+
+.wrapper > .mapcontainer > .map h3:hover  {
+    color: grey; 
 }
 
 .wrapper > .driving  {
     grid-column: 1/5;
     padding-top: 2em;
     padding-bottom: 2em;
-    background: #59BBD5;
+    background-image: linear-gradient(to right bottom,
+     #061932e0,
+     #0e53aec8),
+      url(../pics/snipsnapaaaaa.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .wrapper > .driving h3  {
@@ -198,7 +223,12 @@
 
 .wrapper > .book    {
     grid-column: 1/5;
-    background: #389cD7;
+    background: linear-gradient(to right bottom,
+     #061932e0,
+      #0e53aec8),
+       url(../pics/barndbrekaaaa.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .wrapper > .book h4 {
@@ -212,18 +242,18 @@
 
 .wrapper > .footer  {
     grid-column: 1/5;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    background: #F2EBE2;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: black;
+
 }
 
 .wrapper > .footer p  {
     font-size: 1em;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
-    color: #389cD7;
+    color: rgb(120, 220, 32);
 }
 
 .wrapper > .homebutton {
@@ -265,13 +295,16 @@
     border-radius: 5px;
 }
 
+
+.containerreiner > .container > form    {
+    margin-left: 28%;
+    padding-bottom: 5vh;
+}
+
+
 /* Style inputs with type="text", select elements and textareas */
 .containerreiner > .container > form > input[type=text], select, textarea {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-stretch: expanded;
-    align-content: center;
-    width: 100%; /* Full width */
+    width: 60%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ccc; /* Gray border */
     box-sizing: border-box; /* Make sure that padding and width stays in place
@@ -280,12 +313,11 @@
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-.containerreiner > .container > form > label[for="dname"]    {
-    color: white;
-}
 
-.containerreiner > .container > form > label{
-    font-family: 'Oswald', sans-serif;
+
+.containerreiner > .container > form > label   {
+    color: white;
+    line-height: 2;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -300,8 +332,8 @@
 
 /* When moving the mouse over the submit button, add a darker green color */
 .containerreiner > .container > form > input[type=submit]:hover {
-    background-color: #E0d9d3;
-    color: #389cD7;
+    background-color: #0e53ae;
+    color: white);
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1171px) {

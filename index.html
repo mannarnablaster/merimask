@@ -13,6 +13,7 @@
   <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 
 </head>
@@ -110,29 +111,33 @@
         </div>
         <div class="book">
             <h4>Ticket Reservation</h4>
-        </div>
+        
         <div class="containerreiner">   <!-- Changes the background color around the container which is about 2/4 -->
         <div class="container">
                 <form action="https://formspree.io/mannarna@protonmail.com" method="POST">
               
-                  <label for="dname">First Name</label>
-                  <input type="text" id="fname" name="name" placeholder="Your name..">
+                  <label for="dname">First Name</label><br>
+                  <input type="text" id="fname" name="name" placeholder="Your name.."><br>
               
-                  <label for="dname">Arrival</label>
+                  <label for="dname">Arrival</label><br>
                   <select id="lname" name="name">
                       <option value="arrival20" name="name">20.6 (Wednesday)</option>  
                       <option value="arrival21" name="name">21.6 (Thursday)</option> 
                       <option value="arrival22" name="name">22.6 (Friday)</option> 
                       <option value="arrival23" name="name">23.6 (Saturday)</option> 
                   </select>
+                  <br>
                   <label for="dname">Departure</label>
+                  <br>
                   <select id="dname" name="name">
                       <option value="departure22" name="name">22.6 (Friday)</option>  
                       <option value="departure23" name="name">23.6 (Saturday)</option> 
                       <option value="departure24" name="name">24.6 (Sunday)</option> 
                       <option value="departure25" name="name">25.6 (Monday)</option> 
                   </select>
+                  <br>
                   <label for="dname">Sleeping place</label>
+                  <br>
                   <select id="country" name="name">
                     <optgroup label="Blasthouse 1">
                       <option value="blasthouse1LR1" name="name">Living Room 1</option>  
@@ -163,15 +168,19 @@
                             <option value="keitosauna1Sofa" name="name">Sofa</option>  
                     </optgroup>
                   </select>
+                  <br>
                   <label for="dname">Other info</label>
+                  <br>
                   <input id="bobby" type="text" name="name" placeholder="Enter here.."> 
 
                   <input type="hidden" name="_format" value="plain" />
+                  <br>
                   <input type="submit" value="Send">
               
                 </form>
-        </div>
-    </div>  
+        </div> <!-- end container -->
+    </div>  <!-- end conteinerreiner -->
+    </div> <!-- end book -->
         <div class="footer">
                 <p>Site by Mats Liljeström &copy; </p>
         </div>
