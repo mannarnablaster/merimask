@@ -72,7 +72,6 @@ body{
 
 .back   {
     transform: rotateY(180deg);
-    font-family: 'Oswald' sans-serif;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -100,7 +99,6 @@ body{
 .wrapper > .black p   {
     color: white;
     font-size: 2em;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
@@ -109,7 +107,6 @@ body{
 .wrapper > .actualblack p   {
     color: white;
     font-size: 2em;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
@@ -162,6 +159,7 @@ body{
        url(../pics/rakkatakkssssss.png);
     background-size: cover;
     background-position: center;
+    padding-bottom: 100px;
 }
 
 .wrapper > .mapcontainer > .map {
@@ -170,19 +168,16 @@ body{
 
 .wrapper > .mapcontainer > .map h3  {
     font-size: 2.5em;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
     color: white; 
-}
-
-.wrapper > .mapcontainer > .map h3:hover  {
-    color: grey; 
+    text-shadow: 2px 2px black; 
 }
 
 .wrapper > .driving  {
     grid-column: 1/5;
+    margin-top: -150px;
     padding-top: 2em;
     padding-bottom: 2em;
     background-image: linear-gradient(to right bottom,
@@ -191,15 +186,17 @@ body{
       url(../pics/snipsnapaaaaa.png);
     background-position: center;
     background-size: cover;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+    z-index: 51;
 }
 
 .wrapper > .driving h3  {
     font-size: 2.5em;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
     color: white;
+    text-shadow: 2px 2px black; 
 }
 
 .wrapper > .driving > div   {
@@ -214,14 +211,13 @@ body{
 
 .wrapper > .driving > div p  {
     font-size: 1.8em;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
     color: white;
 }
 
-.wrapper > .book    {
+.wrapper > .book {
     grid-column: 1/5;
     background: linear-gradient(to right bottom,
      #061932e0,
@@ -229,15 +225,19 @@ body{
        url(../pics/barndbrekaaaa.png);
     background-size: cover;
     background-position: center;
+    margin-top: -6.9vh;
+    padding-bottom: 1vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    z-index: 50;
 }
 
 .wrapper > .book h4 {
     color: white;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     font-size: 1.9em;
     text-align: center;
+    text-shadow: 2px 2px black; 
 }
 
 .wrapper > .footer  {
@@ -245,10 +245,30 @@ body{
     padding-top: 1em;
     padding-bottom: 1em;
     background: black;
+    margin-top: -9vh;
+    z-index: 49;
 
 }
 
 .wrapper > .footer p  {
+    font-size: 1em;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-align: center;
+    color: rgb(120, 220, 32);
+}
+
+.hovermats  {
+    position: absolute;
+    z-index: 500;
+    width: 100%;
+    padding: 20px;
+    margin-top: -6.5vh;
+    left: -20px;
+    padding: 0 0 0 0;
+}
+
+.hovermats p {
     font-size: 1em;
     font-weight: 400;
     font-stretch: expanded;
@@ -265,7 +285,6 @@ body{
 .wrapper > .homebutton a   {
     display: block;
     font-size: 1em;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     text-align: center;
@@ -287,7 +306,6 @@ body{
 .wrapper > .containerreiner > .container {
     grid-column: 2/4;
     /* background-color: #f2f2f2; */
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-stretch: expanded;
     margin: 5px 5px 5px 5px;
@@ -323,7 +341,6 @@ body{
 /* Style the submit button with a specific background color etc */
 .containerreiner > .container > form > input[type=submit] {
     background-color: inherit;
-    font-family: 'Oswald', sans-serif;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -344,8 +361,11 @@ body{
         font-size: 1.2em;
     }    
 }
+    .wrapper > .book{
+        margin-top: -8vh;
+    }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 330px) and (max-width: 600px) {
     .wrapper > #banner   {
         font-size: 1.5vw;    
     } 
@@ -389,6 +409,103 @@ body{
 
     .wrapper > div {
         grid-column: 1/5;
+    }
+    
+    .wrapper > .driving {
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+        z-index: 2000;
+        margin-top: -135px
+    }
+
+    .wrapper > .book    {
+        margin-top: -11.2vh;
+        padding-top: 6vh; 
+        padding-bottom: 20px;
+    }
+
+    .hovermats {
+        margin-top: ;
+        padding: 0 0 0 0;
+        left: -1vw;
+    }
+
+    .wrapper > .footer {
+        margin-top: -20vh;
+    }
+
+    .wrapper > .actualblack {
+    }
+
+    .wrapper > .mapcontainer    {
+        margin-top: 0;
+        z-index: 200;
+    }
+
+}
+    
+@media only screen and (max-width: 330px) {
+    .wrapper > #banner   {
+        font-size: 1.5vw;    
+    } 
+
+    .wrapper > #banner img    {
+        width: 100%;
+        height: auto;
+    }
+
+    .buttons {
+        top:28vw;
+    }
+
+    .buttons button {
+        font-size: 0.8em;
+    }
+
+    .buttons button:hover   {
+        font-size: 0.9em;
+    }
+
+    .buttons a {
+        font-size: 0.8em;
+    }
+
+    .buttons a:hover   {
+        font-size: 0.9em;
+    }
+
+    .overlay    {
+        top: 40vw;
+    }
+        
+    .overlay a {
+        font-size: 0.8em;
+    }
+    
+    .overlay a:hover   {
+        font-size: 0.9em;
+    }
+    .wrapper > .driving     {
+        z-index: 5000;
+        margin-top: -125px;
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%) !important;
+
+    }
+    .wrapper > div {
+        grid-column: 1/5;
+    }
+
+    .wrapper > .book    {
+        margin-top: -11.7vh;
+        padding-top: 7vh; 
+        padding-bottom: 20px;
+    }
+
+    .hovermats{
+        left: -1vw;
+    }
+
+    .wrapper > .footer {
+        margin-top: -20vh;
     }
 
     .wrapper > .actualblack {
